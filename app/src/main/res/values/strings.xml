@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">Contact Loader</string>
+    <string name="action_exit">Exit</string>
+    <string name="tExit">Exit</string>
+    <string name="tFirstName">First name</string>
+    <string name="tLastName">Last name</string>
+    <string name="tEmail">Email</string>
+    <string name="tPhone">Phone</string>
+    <string name="placeHolderName">Place holder name</string>
+    <string name="tLoadContact">Load contacts from native</string>
+    <string name="tContactListScreen">Contact List Screen</string>
+    <string name="tContactDetails">Contact Details Screen</string>
+    <string name="tContactList">Contact List Screen</string>
+
+</resources>

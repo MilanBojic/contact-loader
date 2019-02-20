@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+    <include
+        android:id="@+id/contact_details_toolbar"
+        layout="@layout/toolbar" />
+
+    <ImageView
+        android:id="@+id/contact_display_screen_contact_image"
+        android:layout_width="@dimen/contactImageSize"
+        android:layout_height="@dimen/contactImageSize"
+        android:layout_below="@id/contact_details_toolbar"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="@dimen/spacing_large"
+        android:scaleType="centerCrop"
+        android:src="@drawable/default_avatar" />
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/contact_display_screen_contact_image"
+        android:padding="@dimen/spacing_huge">
+
+        <TextView
+            android:id="@+id/contact_item_first_name_label"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="5dip"
+            android:layout_marginTop="@dimen/list_item_size"
+            android:text="@string/tFirstName" />
+
+        <TextView
+            android:id="@+id/contact_display_screen_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/contact_item_first_name_label"
+            android:layout_marginBottom="5dip"
+            android:layout_marginTop="@dimen/spacing_small"
+            android:ellipsize="end"
+            android:singleLine="true"
+            android:textColor="@android:color/black"
+            android:textSize="@dimen/textSizeLarge"
+            android:textStyle="bold" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.8dip"
+            android:layout_below="@id/contact_display_screen_name"
+            android:layout_marginBottom="15dip"
+            android:background="@android:color/darker_gray" />
+
+        <TextView
+            android:id="@+id/contact_item_last_name_label"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/contact_display_screen_name"
+            android:layout_marginBottom="5dip"
+            android:layout_marginTop="@dimen/spacing_normal"
+            android:text="@string/tLastName" />
+
+        <TextView
+            android:id="@+id/contact_display_screen_lastName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/contact_item_last_name_label"
+            android:layout_marginBottom="5dip"
+            android:ellipsize="end"
+            android:singleLine="true"
+            android:textColor="@android:color/black"
+            android:textSize="@dimen/textSizeLarge"
+            android:textStyle="bold" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.8dip"
+            android:layout_below="@id/contact_display_screen_lastName"
+            android:layout_marginBottom="15dip"
+            android:background="@android:color/darker_gray" />
+
+        <RelativeLayout
+            android:id="@+id/contact_details_email_container"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/contact_display_screen_lastName">
+
+            <TextView
+                android:id="@+id/contact_item_email_label"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="5dip"
+                android:layout_marginTop="@dimen/spacing_normal"
+                android:text="@string/tEmail" />
+
+            <TextView
+                android:id="@+id/contact_display_screen_email"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/contact_item_email_label"
+                android:layout_marginBottom="5dip"
+                android:ellipsize="end"
+                android:singleLine="true"
+                android:textColor="@android:color/black"
+                android:textSize="@dimen/textSizeLarge"
+                android:textStyle="bold" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.8dip"
+                android:layout_below="@id/contact_display_screen_email"
+                android:layout_marginBottom="15dip"
+                android:background="@android:color/darker_gray" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/contact_details_phone_container"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/contact_details_email_container">
+
+            <TextView
+                android:id="@+id/contact_item_phone_label"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/tPhone" />
+
+            <TextView
+                android:id="@+id/contact_display_screen_phone"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/contact_item_phone_label"
+                android:layout_marginBottom="5dip"
+                android:ellipsize="end"
+                android:singleLine="true"
+                android:textColor="@android:color/black"
+                android:textSize="@dimen/textSizeLarge"
+                android:textStyle="bold" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.8dip"
+                android:layout_below="@id/contact_display_screen_phone"
+                android:layout_marginBottom="15dip"
+                android:background="@android:color/darker_gray" />
+        </RelativeLayout>
+    </RelativeLayout>
+
+</RelativeLayout>
