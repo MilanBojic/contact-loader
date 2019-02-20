@@ -39,6 +39,10 @@ This will run the app on your device. You may need to download a newer version o
 
 ![test image size](https://github.com/MilanBojic/contact-loader/blob/master/image1.png)
 
+![test image size](https://github.com/MilanBojic/contact-loader/blob/master/image2.png)
+
+![test image size](https://github.com/MilanBojic/contact-loader/blob/master/image3.png)
+
 
 
 **Support**
